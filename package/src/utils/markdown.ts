@@ -1,6 +1,7 @@
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
+import { Blog } from "@/types/blog";
 
 const postsDirectory = join(process.cwd(), "markdown/Blog");
 
@@ -45,12 +46,16 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   return items;
 }
 
-export function getAllPosts(fields: string[] = []) {
+export function getAllPosts(fields: string[] = []): Blog[] {
   const slugs = getPostSlugs();
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
     // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+    .sort((post1, post2) => {
+      const date1 = (post1.date as string) || '';
+      const date2 = (post2.date as string) || '';
+      return date1 > date2 ? -1 : 1;
+    }) as Blog[];
 
   return posts;
 }
