@@ -48,14 +48,14 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
 
 export function getAllPosts(fields: string[] = []): Blog[] {
   const slugs = getPostSlugs();
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields))
-    // sort posts by date in descending order
-    .sort((post1, post2) => {
-      const date1 = (post1.date as string) || '';
-      const date2 = (post2.date as string) || '';
-      return date1 > date2 ? -1 : 1;
-    }) as unknown as Blog[];
+  const posts = slugs.map((slug) => getPostBySlug(slug, fields));
+  
+  // sort posts by date in descending order
+  const sortedPosts = posts.sort((post1, post2) => {
+    const date1 = (post1.date as string) || '';
+    const date2 = (post2.date as string) || '';
+    return date1 > date2 ? -1 : 1;
+  });
 
-  return posts;
+  return sortedPosts as unknown as Blog[];
 }
