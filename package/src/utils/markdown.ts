@@ -55,7 +55,7 @@ export function getAllPosts(fields: string[] = []): Blog[] {
       const date1 = (post1.date as string) || '';
       const date2 = (post2.date as string) || '';
       return date1 > date2 ? -1 : 1;
-    }) as Blog[];
+    }) as unknown as Blog[];
 
   return posts;
 }
