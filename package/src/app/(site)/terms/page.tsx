@@ -19,7 +19,7 @@ const TermsPage = () => {
               <div>
                 <h2 className='text-white text-32 font-semibold mb-4'>Agreement to Terms</h2>
                 <p>
-                  By accessing and using datnoc's security services and website, you agree to be bound by these Terms 
+                  By accessing and using datnoc&apos;s security services and website, you agree to be bound by these Terms 
                   of Service and all applicable laws and regulations. If you do not agree with any of these terms, 
                   you are prohibited from using our services.
                 </p>

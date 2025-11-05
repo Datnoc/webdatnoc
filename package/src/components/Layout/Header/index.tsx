@@ -33,7 +33,7 @@ const Header: React.FC = () => {
       window.removeEventListener('scroll', handleScroll)
       document.removeEventListener('mousedown', handleClickOutside)
     }
-  }, [navbarOpen])
+  }, [navbarOpen, handleClickOutside])
 
   useEffect(() => {
     if (navbarOpen) {

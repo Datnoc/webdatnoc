@@ -119,7 +119,7 @@ const KVKKPage = () => {
               <div>
                 <h2 className='text-white text-32 font-semibold mb-4'>Veri İhlali Bildirimi</h2>
                 <p>
-                  Kişisel verilerinizde bir ihlal tespit edilmesi durumunda, KVKK'nın öngördüğü şekilde en geç 72 saat 
+                  Kişisel verilerinizde bir ihlal tespit edilmesi durumunda, KVKK&apos;nın öngördüğü şekilde en geç 72 saat 
                   içinde Kişisel Verileri Koruma Kurumuna bildirim yapılmakta ve etkilenen kişiler gecikmeksizin 
                   bilgilendirilmektedir.
                 </p>
