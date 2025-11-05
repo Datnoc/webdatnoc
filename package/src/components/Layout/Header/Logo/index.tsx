@@ -3,8 +3,9 @@ import Link from "next/link";
 const Logo: React.FC = () => {
   return (
     <Link href="/" className="flex items-center">
-      <span className="text-white text-32 font-bold hover:text-primary transition-colors">
-        datnoc
+      <span className="text-40 font-bold transition-colors">
+        <span className="text-white">dat</span>
+        <span className="text-primary">noc</span>
       </span>
     </Link>
   );
