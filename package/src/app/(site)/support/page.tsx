@@ -216,7 +216,7 @@ const SupportPage = () => {
                   <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M15 11a3 3 0 11-6 0 3 3 0 016 0z' />
                 </svg>
                 <div className='text-muted/80 text-16'>
-                  <p className='text-white font-semibold mb-2'>datnoc</p>
+                  <p className='text-white font-semibold mb-2'>Datnoc INC</p>
                   <p>30N Gould Street</p>
                   <p>Sheridan, Wyoming, US 82801</p>
                 </div>
