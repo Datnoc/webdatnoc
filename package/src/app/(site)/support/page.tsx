@@ -25,7 +25,7 @@ const SupportPage = () => {
                     </svg>
                     <h3 className='text-white text-24 font-semibold'>Email Support</h3>
                   </div>
-                  <p className='text-muted/80 text-16 mb-4'>Send us an email and we'll get back to you within 24 hours.</p>
+                  <p className='text-muted/80 text-16 mb-4'>Send us an email and we&apos;ll get back to you within 24 hours.</p>
                   <a href='mailto:support@datnoc.com' className='text-primary hover:underline text-18 font-medium'>
                     support@datnoc.com
                   </a>
@@ -97,7 +97,7 @@ const SupportPage = () => {
                 <div className='bg-dark_grey/50 p-6 rounded-lg border border-primary/20'>
                   <h3 className='text-white text-20 font-semibold mb-3'>How do I get started with your security services?</h3>
                   <p className='text-muted/80 text-16'>
-                    You can get started by contacting our sales team via email or phone. We'll schedule a consultation to assess your security needs and provide a customized solution.
+                    You can get started by contacting our sales team via email or phone. We&apos;ll schedule a consultation to assess your security needs and provide a customized solution.
                   </p>
                 </div>
 
