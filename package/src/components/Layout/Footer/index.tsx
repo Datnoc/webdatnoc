@@ -156,6 +156,9 @@ const Footer: FC = () => {
               <Link href='/terms' className='text-white hover:text-primary text-16'>
                 Terms of Service
               </Link>
+              <Link href='/support' className='text-white hover:text-primary text-16'>
+                Support
+              </Link>
             </div>
             <div className='flex items-center gap-4'>
               <span className='text-muted/60 text-14'>Certified:</span>

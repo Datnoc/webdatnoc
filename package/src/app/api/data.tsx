@@ -3,6 +3,7 @@ export const footerlabels: { label: string; herf: string }[] = [
   { label: "Security Policy", herf: "#" },
   { label: "Terms of Service", herf: "#" },
   { label: "Security Blog", herf: "#" },
+  { label: "Support", herf: "/support" },
 ];
 
 export const pricedeta: {
